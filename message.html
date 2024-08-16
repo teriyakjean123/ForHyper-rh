@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./index2.css">
+
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <div class="mess_text">
+                    <h1>Hi hyper sweet girl watchu doin po? HAHAHAHAH
+                        I just want to say few things siguro like no matter circumstances we face natin nandito lng si
+                        toto ruhge sa side mo be not afraid mag say sa akin na you're not okay clear? I'll always embrace you and whatever a person you are 
+                        if maging lamok kaman ikaw parin like na like ko HAHAHHA. I have so much to appreciate you for
+                        the efforts na binibigay mo, the time, settlements mga stuff na ganun yun wag ko muna i spoil lahat galing ka no? I love you mwah!😘🫰🤡 wag ka lng ma cry pabo! HAHAHAHAHAHHAHAHHA
+                    </h1>
+                </div>
+            </div>
+            <div class="gif_container">
+                <img src="image/200.webp" width="480" height="230" alt="">
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Proceed!</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Exit!</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "hey.html";
+                    }
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>

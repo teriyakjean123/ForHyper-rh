@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./index2.css">
+
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="mess_proc">AHAHAHAHAHHAHAHAHAHAHAHAHAHAHAH mwah!</h1>
+            </div>
+            <div class="gif_container">
+                <audio id= "myAudio" controls>
+                    <source src="music/SA ISANG SULYAP MO by 1-43 (Original Official Music Video in HD).mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "prcButton" onclick="nextPage()">Proceed!</button>
+                <script>
+                    
+                    function nextPage() {
+                        window.location.href = "index2.html";
+                    }
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('suButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('giButton').offsetHeight) - 48;
+                        document.getElementById('suButton').style.left = `${x}px`;
+                        document.getElementById('giButton').style.top = `${y}px`;
+                    }
+
+                    var delayTime = 80000; 
+                    var audioElement = document.getElementById("myAudio");
+                    setTimeout(function() {
+                        audioElement.play();
+                    }, delayTime);
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
